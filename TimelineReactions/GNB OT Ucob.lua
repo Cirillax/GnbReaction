@@ -71,6 +71,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 7,
 				name = "Potion",
 				timelineIndex = 2,
@@ -141,6 +142,27 @@ local tbl =
 			inheritedObjectUUID = "cfe47b0c-5a09-7580-a603-c5e248ecdc5c",
 			inheritedOverwrites = 
 			{
+				conditions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "4ab6bfc7-c1f5-c646-8cf9-175bf0e191b4",
+								version = 2,
+							},
+							inheritedObjectUUID = "34d4b0d1-ddd6-1a18-bc95-682d6371a5c7",
+							inheritedOverwrites = 
+							{
+								channelCheckTimeRemain = 0.0099999997764826,
+							},
+						},
+					},
+				},
 				timerEndOffset = 185.89999389648,
 			},
 		},
@@ -2173,6 +2195,64 @@ local tbl =
 				timerOffset = -1.3999999761581,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB2_Potion",
+							potType = 4,
+							usePot = true,
+							uuid = "09a436a7-2c38-3a1b-88dd-f4678655d5c2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 511,
+				name = "use pot",
+				timelineIndex = 87,
+				timerOffset = -3.5,
+				uuid = "e19609e1-fcaf-a16f-b58c-bd10300d3e3c",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16138,
+							uuid = "af905ef5-f112-9d45-9e5c-3c50b2453c97",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 511,
+				name = "No Mercy",
+				timelineIndex = 87,
+				timerOffset = -0.5,
+				uuid = "760409f2-9001-066e-83fe-aa76802c3c5c",
+				version = 2,
+			},
+		},
 	},
 	[88] = 
 	{
@@ -2666,23 +2746,6 @@ local tbl =
 			},
 		},
 	},
-	[102] = 
-	{
-		
-		{
-			data = 
-			{
-				name = "disable",
-				uuid = "70381933-2596-40a8-a2cd-27b223cb1a98",
-				version = 2,
-			},
-			inheritedObjectUUID = "33ef3d73-c239-7bea-b3e7-af7ebf1f0870",
-			inheritedOverwrites = 
-			{
-				enabled = false,
-			},
-		},
-	},
 	[108] = 
 	{
 		
@@ -2722,14 +2785,28 @@ local tbl =
 		{
 			data = 
 			{
-				name = "target boss",
-				uuid = "172c13b1-72ce-b488-ac83-e68ecd90a8c8",
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16138,
+							uuid = "af905ef5-f112-9d45-9e5c-3c50b2453c97",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 590,
+				name = "No Mercy",
+				timelineIndex = 109,
+				timerOffset = -0.30000001192093,
+				uuid = "88a395b1-d227-a5f1-b244-fe31f5b84ccd",
 				version = 2,
-			},
-			inheritedObjectUUID = "3abaac13-1e65-fffa-9668-dcfbc919c3d0",
-			inheritedOverwrites = 
-			{
-				enabled = false,
 			},
 		},
 	},
@@ -3022,7 +3099,7 @@ local tbl =
 				mechanicTime = 609,
 				name = "Camo",
 				timelineIndex = 113,
-				timerOffset = -18,
+				timerOffset = -12,
 				uuid = "3d139c7f-ffb0-4523-85fb-a2c14d68c2e8",
 				version = 2,
 			},
@@ -4053,6 +4130,39 @@ local tbl =
 			},
 		},
 	},
+	[168] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB2_Potion",
+							potType = 4,
+							usePot = true,
+							uuid = "09a436a7-2c38-3a1b-88dd-f4678655d5c2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 844.9,
+				name = "use pot",
+				timelineIndex = 168,
+				timerOffset = -2.5,
+				uuid = "860eb138-f1e4-0804-8e12-5663e0c2335b",
+				version = 2,
+			},
+		},
+	},
 	[169] = 
 	{
 		
@@ -4145,6 +4255,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 852.9,
 				name = "disable aoe",
 				timelineIndex = 169,
@@ -4277,6 +4388,14 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"f88281df-5087-f2e6-9678-7d00641d7885",
+									true,
+								},
+							},
 							gVar = "ACR_RikuGNB2_Tankbar_Rampart",
 							uuid = "4d0aa8e1-664d-4ee2-a4a7-7cb4d51cad81",
 							variableTogglesType = 3,
@@ -4288,6 +4407,14 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"f88281df-5087-f2e6-9678-7d00641d7885",
+									true,
+								},
+							},
 							gVar = "ACR_RikuGNB2_Tankbar_Camouflage",
 							uuid = "799509e3-d7c0-9935-9f26-26bf22920d3f",
 							variableTogglesType = 3,
@@ -4297,6 +4424,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							conditionType = 3,
+							dequeueIfLuaFalse = true,
+							hpValue = 2,
+							uuid = "f88281df-5087-f2e6-9678-7d00641d7885",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 960.1,
 				name = "Mits",
@@ -4364,6 +4502,37 @@ local tbl =
 				timelineIndex = 193,
 				timerOffset = -4,
 				uuid = "d353b864-ccea-1d60-9761-d9a2e9b32c2f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB2_Potion",
+							potType = 4,
+							usePot = true,
+							uuid = "09a436a7-2c38-3a1b-88dd-f4678655d5c2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 1245,
+				name = "use pot",
+				timelineIndex = 193,
+				timerOffset = -2.5,
+				uuid = "ae32254b-1624-d23e-af17-635024a9ffeb",
 				version = 2,
 			},
 		},
@@ -4589,6 +4758,36 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB2_Potion",
+							potType = 4,
+							usePot = true,
+							uuid = "09a436a7-2c38-3a1b-88dd-f4678655d5c2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1306.9,
+				name = "use pot",
+				timelineIndex = 198,
+				timerOffset = -1.5,
+				uuid = "fc04909a-ddd7-129e-ba96-5fd55d61798c",
+				version = 2,
+			},
+		},
 	},
 	[200] = 
 	{
@@ -4616,8 +4815,41 @@ local tbl =
 				mechanicTime = 1340.5,
 				name = "lb3",
 				timelineIndex = 200,
-				timerOffset = -3,
+				timerOffset = -3.7000000476837,
 				uuid = "41b27b1d-cda0-7fbc-803a-d6146843331a",
+				version = 2,
+			},
+		},
+	},
+	[201] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuGNB2_Hotbar_Provoke",
+							uuid = "cc7454e0-e1d7-b5ea-a608-b0f5142cc77c",
+							variableTogglesType = 2,
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1352.7,
+				name = "provoke",
+				timelineIndex = 201,
+				timerOffset = 2,
+				uuid = "01a82fb2-4110-7dd0-b3dc-4961f10bbb15",
 				version = 2,
 			},
 		},
