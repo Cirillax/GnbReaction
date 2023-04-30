@@ -104,11 +104,9 @@ local tbl =
 				mechanicTime = 7,
 				name = "Heart of Light",
 				randomTimeout = 2,
-				timeRandomRange = true,
-				timeRange = true,
 				timelineIndex = 2,
 				timerEndOffset = 1.5,
-				timerOffset = -3,
+				timerOffset = -5,
 				timerStartOffset = -3,
 				uuid = "e0316894-99b7-b29c-acea-6b1becb95db4",
 				version = 2,
@@ -2207,6 +2205,7 @@ local tbl =
 						{
 							aType = "Misc",
 							gVar = "ACR_RikuGNB2_Potion",
+							ignoreWeaveRules = true,
 							potType = 4,
 							usePot = true,
 							uuid = "09a436a7-2c38-3a1b-88dd-f4678655d5c2",
@@ -2251,6 +2250,20 @@ local tbl =
 				timerOffset = -0.5,
 				uuid = "760409f2-9001-066e-83fe-aa76802c3c5c",
 				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				name = "Enable CDs",
+				uuid = "f43069a6-b98b-404b-9ca9-bc0f34182c0e",
+				version = 2,
+			},
+			inheritedIndex = 7,
+			inheritedObjectUUID = "0b78624d-96f2-691b-8eec-0cd77416272d",
+			inheritedOverwrites = 
+			{
 			},
 		},
 	},
@@ -4687,6 +4700,39 @@ local tbl =
 			},
 		},
 	},
+	[197] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuGNB2_Hotbar_Provoke",
+							uuid = "cc7454e0-e1d7-b5ea-a608-b0f5142cc77c",
+							variableTogglesType = 2,
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1289.3,
+				name = "provoke",
+				timelineIndex = 197,
+				timerOffset = 7,
+				uuid = "e29c2f19-6a7f-7d03-a2c6-8561d302a922",
+				version = 2,
+			},
+		},
+	},
 	[198] = 
 	{
 		
@@ -4783,7 +4829,7 @@ local tbl =
 				mechanicTime = 1306.9,
 				name = "use pot",
 				timelineIndex = 198,
-				timerOffset = -1.5,
+				timerOffset = -2.5,
 				uuid = "fc04909a-ddd7-129e-ba96-5fd55d61798c",
 				version = 2,
 			},
@@ -4834,22 +4880,21 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuGNB2_Hotbar_Provoke",
-							uuid = "cc7454e0-e1d7-b5ea-a608-b0f5142cc77c",
-							variableTogglesType = 2,
+							gVar = "ACR_RikuGNB2_Tankbar_Superbolide",
+							uuid = "85a82fdb-3f4c-11ed-b9f6-a7840dacaf2e",
+							variableTogglesType = 3,
 							version = 2,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
 				},
 				mechanicTime = 1352.7,
-				name = "provoke",
+				name = "Bolide",
 				timelineIndex = 201,
-				timerOffset = 2,
-				uuid = "01a82fb2-4110-7dd0-b3dc-4961f10bbb15",
+				timerOffset = -3,
+				uuid = "108c03f0-ad1a-979a-a62e-7822e9c6afbf",
 				version = 2,
 			},
 		},

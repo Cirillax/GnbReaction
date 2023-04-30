@@ -26,6 +26,7 @@ local tbl =
 				mechanicTime = 7,
 				name = "HoL",
 				timelineIndex = 2,
+				timerOffset = -1.5,
 				uuid = "380240ff-9185-5519-8280-27b6b22876e6",
 				version = 2,
 			},
@@ -54,7 +55,7 @@ local tbl =
 				mechanicTime = 7,
 				name = "Rampart",
 				timelineIndex = 2,
-				timerOffset = -6,
+				timerOffset = -5,
 				uuid = "2446fd87-951f-b0da-a161-be039554c388",
 				version = 2,
 			},
@@ -225,13 +226,34 @@ local tbl =
 							version = 2,
 						},
 					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 47.5,
+				name = "HoS MT",
+				timelineIndex = 10,
+				timerOffset = -6,
+				uuid = "f96a0707-8324-758b-9c19-a459d6f67e88",
+				version = 2,
+			},
+		},
+	},
+	[12] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
 					
 					{
 						data = 
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuGNB2_Tankbar_AuroraOT",
-							uuid = "f55e4213-1182-b56f-86ca-e6c01568a43c",
+							uuid = "cdb2d3fb-0705-07cf-aa16-4d56fda34a33",
 							variableTogglesType = 3,
 							version = 2,
 						},
@@ -240,11 +262,10 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 47.5,
-				name = "HoS MT",
-				timelineIndex = 10,
-				timerOffset = -2,
-				uuid = "f96a0707-8324-758b-9c19-a459d6f67e88",
+				mechanicTime = 56,
+				name = "Aurora OT",
+				timelineIndex = 12,
+				uuid = "30ed9759-32fc-a050-afe1-b2c414a3d6a0",
 				version = 2,
 			},
 		},
@@ -275,7 +296,7 @@ local tbl =
 				mechanicTime = 59.1,
 				name = "Reprisal",
 				timelineIndex = 13,
-				timerOffset = 1,
+				timerOffset = 2.5,
 				uuid = "b74a60d0-d7fc-4a6e-96c0-16fea862c420",
 				version = 2,
 			},
@@ -355,6 +376,39 @@ local tbl =
 			},
 		},
 	},
+	[16] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuGNB2_Tankbar_HeartOfCorundumSelf",
+							uuid = "f1170e7d-85ca-284f-af1f-89473d3d4f68",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 80.6,
+				name = "HoS self",
+				timelineIndex = 16,
+				timerOffset = 4,
+				uuid = "f8579533-d9aa-e0f4-8ea7-cb73ba3a1eb8",
+				version = 2,
+			},
+		},
+	},
 	[18] = 
 	{
 		
@@ -378,6 +432,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 91.7,
 				name = "HoS self",
 				timelineIndex = 18,
@@ -413,6 +468,7 @@ local tbl =
 				mechanicTime = 106.4,
 				name = "Nebula",
 				timelineIndex = 20,
+				timerOffset = 2,
 				uuid = "c12c961a-0b68-3d7e-b42d-d6c50e7a33dc",
 				version = 2,
 			},
@@ -578,6 +634,35 @@ local tbl =
 				timelineIndex = 25,
 				timerOffset = -1,
 				uuid = "302d68bc-d72d-e877-8251-759817b58e2d",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuGNB2_Tankbar_Camouflage",
+							uuid = "f77e4e5e-1f8b-c578-b4b6-51c258dd2cee",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 133.6,
+				name = "Camo",
+				timelineIndex = 25,
+				timerOffset = -9,
+				uuid = "97f3af5a-db52-62d3-99ba-a9cbaf3a8812",
 				version = 2,
 			},
 		},
@@ -1020,6 +1105,20 @@ local tbl =
 		{
 			data = 
 			{
+				name = "[MCH] Precast Potion",
+				uuid = "b90da752-273a-661d-9c4c-c6063434bba0",
+				version = 2,
+			},
+			inheritedObjectUUID = "7a776270-406c-36e4-9740-e6f405e82288",
+			inheritedOverwrites = 
+			{
+				timerOffset = -1.3999999761581,
+			},
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -1040,7 +1139,67 @@ local tbl =
 				mechanicTime = 511,
 				name = "Provoke",
 				timelineIndex = 87,
+				timerOffset = 1,
 				uuid = "d398c6a1-29e0-5ebd-932c-6e22d989ffb1",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB2_Potion",
+							ignoreWeaveRules = true,
+							potType = 4,
+							usePot = true,
+							uuid = "09a436a7-2c38-3a1b-88dd-f4678655d5c2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 511,
+				name = "use pot",
+				timelineIndex = 87,
+				timerOffset = -3.5,
+				uuid = "a3234f9f-18fc-8a0d-9351-f4b2aa817acf",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16138,
+							uuid = "af905ef5-f112-9d45-9e5c-3c50b2453c97",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 511,
+				name = "No Mercy",
+				timelineIndex = 87,
+				timerOffset = -0.5,
+				uuid = "c1e30797-2ec8-909d-8957-7e931d649867",
 				version = 2,
 			},
 		},
@@ -1957,6 +2116,39 @@ local tbl =
 			},
 		},
 	},
+	[168] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB2_Potion",
+							potType = 4,
+							usePot = true,
+							uuid = "09a436a7-2c38-3a1b-88dd-f4678655d5c2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 844.9,
+				name = "use pot",
+				timelineIndex = 168,
+				timerOffset = -2.5,
+				uuid = "07c85b0c-bdd2-3e16-86d5-459fe0f96d2c",
+				version = 2,
+			},
+		},
+	},
 	[169] = 
 	{
 		
@@ -2504,6 +2696,36 @@ local tbl =
 				timelineIndex = 198,
 				timerOffset = -5,
 				uuid = "be8d34a7-b049-d320-b7e3-dca7cccdb68c",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB2_Potion",
+							potType = 4,
+							usePot = true,
+							uuid = "09a436a7-2c38-3a1b-88dd-f4678655d5c2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1306.9,
+				name = "use pot",
+				timelineIndex = 198,
+				timerOffset = -1.5,
+				uuid = "b9f476b7-2161-ef5f-a9da-757374c0e079",
 				version = 2,
 			},
 		},
