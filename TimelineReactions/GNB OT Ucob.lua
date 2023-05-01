@@ -2458,6 +2458,35 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuGNB2_Tankbar_Reprisal",
+							uuid = "e99b83e4-c0dc-c2a5-bb9c-4bbd667ae5fd",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 552,
+				name = "Reprisal",
+				timelineIndex = 98,
+				timerOffset = -2.5,
+				uuid = "7acb0e71-4358-6032-b499-5729c4d1341b",
+				version = 2,
+			},
+		},
 	},
 	[99] = 
 	{
@@ -4170,7 +4199,7 @@ local tbl =
 				mechanicTime = 844.9,
 				name = "use pot",
 				timelineIndex = 168,
-				timerOffset = -2.5,
+				timerOffset = -3.2000000476837,
 				uuid = "860eb138-f1e4-0804-8e12-5663e0c2335b",
 				version = 2,
 			},
@@ -4242,7 +4271,7 @@ local tbl =
 				mechanicTime = 852.9,
 				name = "Mits",
 				timelineIndex = 169,
-				timerOffset = -10,
+				timerOffset = -8,
 				uuid = "6696e6d3-c9bc-44e5-a4f8-b6298cf63489",
 				version = 2,
 			},
@@ -4727,7 +4756,7 @@ local tbl =
 				mechanicTime = 1289.3,
 				name = "provoke",
 				timelineIndex = 197,
-				timerOffset = 7,
+				timerOffset = 6.5,
 				uuid = "e29c2f19-6a7f-7d03-a2c6-8561d302a922",
 				version = 2,
 			},
