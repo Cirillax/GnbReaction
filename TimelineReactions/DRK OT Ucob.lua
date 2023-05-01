@@ -17,6 +17,23 @@ local tbl =
 			},
 		},
 	},
+	[3] = 
+	{
+		
+		{
+			data = 
+			{
+				name = "Draw Twister",
+				uuid = "7b1a9979-07be-0f39-b324-534f5e8c409e",
+				version = 2,
+			},
+			inheritedObjectUUID = "9bcb4b7f-29a9-2e9c-af03-3664dbd03657",
+			inheritedOverwrites = 
+			{
+				timerEndOffset = 185.89999389648,
+			},
+		},
+	},
 	[4] = 
 	{
 		
@@ -139,6 +156,69 @@ local tbl =
 		{
 			data = 
 			{
+				name = "Provoke",
+				uuid = "195a1777-5cb7-50b5-9ee9-ef1fdf02b659",
+				version = 2,
+			},
+			inheritedObjectUUID = "091d947d-b16a-d3d2-b850-487010b82a90",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "94e0af30-3036-9260-ab33-7d3e3e88ebae",
+								version = 2,
+							},
+							inheritedObjectUUID = "13737fc3-4f10-133d-b0a8-e5cee357fd0a",
+							inheritedOverwrites = 
+							{
+								conditions = 
+								{
+									
+									{
+										type = "remove",
+										value = 
+										{
+											"58595f26-4ae8-3e36-8fe4-3331b2fb23ab",
+											true,
+										},
+									},
+								},
+								gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							},
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						type = "remove",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "e20e05f6-5e39-451d-bc9b-844f68ab1ca4",
+								version = 2,
+							},
+							inheritedObjectUUID = "58595f26-4ae8-3e36-8fe4-3331b2fb23ab",
+						},
+					},
+				},
+			},
+		},
+		
+		{
+			data = 
+			{
 				name = "rampart",
 				uuid = "960e9bf2-6b7e-44bc-9104-e4661bd421ab",
 				version = 2,
@@ -146,7 +226,59 @@ local tbl =
 			inheritedObjectUUID = "e2f23a7f-811b-27b3-a098-cae23aad4a0e",
 			inheritedOverwrites = 
 			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "e139b3bb-49bf-d7ff-abaf-8093237aa50d",
+								version = 2,
+							},
+							inheritedObjectUUID = "394df818-5b48-ecd2-937a-d89444a666cc",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							},
+						},
+					},
+				},
 				timerStartOffset = 1.2000000476837,
+			},
+		},
+	},
+	[10] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
+							uuid = "8a8a08eb-9a5e-82f8-8dfa-dd769a16fc36",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 47.5,
+				name = "TBN Self",
+				timelineIndex = 10,
+				uuid = "3d297bae-4cd8-f5ef-910c-48d7d0fc7ef9",
+				version = 2,
 			},
 		},
 	},
@@ -184,7 +316,6 @@ local tbl =
 						},
 					},
 				},
-				enabled = false,
 			},
 		},
 		
@@ -252,6 +383,24 @@ local tbl =
 							},
 						},
 					},
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "eeb3e33e-16c5-c5ae-a021-b2fec904cea4",
+								version = 2,
+							},
+							inheritedObjectUUID = "b9a99e03-9e09-4c7e-b212-bd1eefdaf04c",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							},
+						},
+					},
 				},
 			},
 		},
@@ -309,6 +458,74 @@ local tbl =
 				enabled = false,
 			},
 		},
+		
+		{
+			data = 
+			{
+				name = "Reprisal",
+				uuid = "94fdb128-424a-a57e-b98c-90fd8e8fccf4",
+				version = 2,
+			},
+			inheritedObjectUUID = "e0958701-bd3d-6ac2-bc6a-121a8423ea29",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "40d7bac6-b02a-2f7b-a040-329ddbcf1ffd",
+								version = 2,
+							},
+							inheritedObjectUUID = "4065afca-641e-b541-ba31-bad5d791536b",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							},
+						},
+					},
+				},
+			},
+		},
+		
+		{
+			data = 
+			{
+				name = "Sprint",
+				uuid = "f5b75228-6a9d-8c6a-a579-1ac8f1af6285",
+				version = 2,
+			},
+			inheritedObjectUUID = "0ee7933f-7494-5b9e-9559-42213b4a979f",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "ec23a230-5923-2d4c-9d23-6e4f090b4c9d",
+								version = 2,
+							},
+							inheritedObjectUUID = "def1c777-351c-fc00-890f-3f6b59c5f17e",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_Sprint",
+							},
+						},
+					},
+				},
+			},
+		},
 	},
 	[25] = 
 	{
@@ -323,6 +540,27 @@ local tbl =
 			inheritedObjectUUID = "5f0e55af-53b8-eed2-bbf9-a580e422ec3a",
 			inheritedOverwrites = 
 			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "8a49d482-019f-9a5d-8e3e-5ca60f576f21",
+								version = 2,
+							},
+							inheritedObjectUUID = "21f94ae8-d3b8-642e-bbb7-2b2e3559020d",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							},
+						},
+					},
+				},
 				timerOffset = -3.5999999046326,
 				timerStartOffset = -3.5999999046326,
 			},
@@ -339,6 +577,40 @@ local tbl =
 			inheritedOverwrites = 
 			{
 				enabled = false,
+			},
+		},
+		
+		{
+			data = 
+			{
+				name = "Reprisal",
+				uuid = "58e1a81c-8d02-5b82-b29b-834f19cee1b9",
+				version = 2,
+			},
+			inheritedObjectUUID = "2c73af5c-2fe0-ddeb-ad61-7bb8722b460a",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "33e180b8-87de-0a9c-85b8-cde68eacbfb0",
+								version = 2,
+							},
+							inheritedObjectUUID = "4065afca-641e-b541-ba31-bad5d791536b",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							},
+						},
+					},
+				},
 			},
 		},
 		
@@ -392,6 +664,40 @@ local tbl =
 	},
 	[29] = 
 	{
+		
+		{
+			data = 
+			{
+				name = "Rampart",
+				uuid = "f1e25db1-5d9e-2ff8-96db-82098a938b54",
+				version = 2,
+			},
+			inheritedObjectUUID = "ec083e4a-073a-595e-a6e5-337b747c8df4",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "9f72a865-ff19-9d3a-8fc5-01d5f393d847",
+								version = 2,
+							},
+							inheritedObjectUUID = "441831d0-2336-6312-8d84-3720f756f330",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							},
+						},
+					},
+				},
+			},
+		},
 		
 		{
 			data = 
@@ -627,6 +933,23 @@ local tbl =
 			},
 		},
 	},
+	[55] = 
+	{
+		
+		{
+			data = 
+			{
+				name = "Heart of Light",
+				uuid = "a478c549-a596-2635-a13d-026a2e7bff3a",
+				version = 2,
+			},
+			inheritedObjectUUID = "41abf434-b009-fe8b-81d9-8a291c616a1b",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
+		},
+	},
 	[59] = 
 	{
 		
@@ -671,6 +994,7 @@ local tbl =
 				uuid = "8a9642ea-865c-5407-b378-276a6c04b6d3",
 				version = 2,
 			},
+			inheritedIndex = 1,
 			inheritedObjectUUID = "c5ee4834-3813-6d53-9461-933a81ff8af7",
 			inheritedOverwrites = 
 			{
@@ -731,6 +1055,41 @@ local tbl =
 				},
 			},
 		},
+		
+		{
+			data = 
+			{
+				name = "reprisal",
+				uuid = "509f4136-8a4a-5d98-9059-41a89bd23288",
+				version = 2,
+			},
+			inheritedObjectUUID = "c217a0ca-2f2a-7e8d-839d-85ea1fd6e63b",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "ca6088b6-19fb-56ce-a20f-aca90213f05f",
+								version = 2,
+							},
+							inheritedObjectUUID = "03170501-f282-fe36-97d9-875ee8830df0",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							},
+						},
+					},
+				},
+				timerOffset = -6,
+			},
+		},
 	},
 	[63] = 
 	{
@@ -779,6 +1138,27 @@ local tbl =
 			inheritedObjectUUID = "97865d13-6ded-c597-a143-2423dc4b3018",
 			inheritedOverwrites = 
 			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "a78334c6-b297-0fb3-80ad-33286da98413",
+								version = 2,
+							},
+							inheritedObjectUUID = "381ab5df-343c-849e-a1b5-0e355a7445aa",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							},
+						},
+					},
+				},
 				enabled = false,
 			},
 		},
@@ -793,6 +1173,27 @@ local tbl =
 			inheritedObjectUUID = "87714e2f-5a26-2067-b4b4-87837863805b",
 			inheritedOverwrites = 
 			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "da49e1c4-9284-78e7-b63c-ea7da77c8c22",
+								version = 2,
+							},
+							inheritedObjectUUID = "21f94ae8-d3b8-642e-bbb7-2b2e3559020d",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
+							},
+						},
+					},
+				},
 				timerOffset = -3.5999999046326,
 			},
 		},
@@ -811,6 +1212,7 @@ local tbl =
 				{
 					
 					{
+						position = 1,
 						type = "add",
 						value = 
 						{
@@ -820,6 +1222,7 @@ local tbl =
 								uuid = "0cfed78e-514b-a25e-b6c5-3828535f611e",
 								version = 2,
 							},
+							inheritedIndex = 1,
 							inheritedObjectUUID = "9fb2fe40-09ba-1b9a-9b65-bbad6441f8d0",
 							inheritedOverwrites = 
 							{
@@ -1117,7 +1520,6 @@ local tbl =
 						},
 					},
 				},
-				enabled = false,
 			},
 		},
 	},
@@ -1173,6 +1575,35 @@ local tbl =
 					},
 				},
 				enabled = false,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							uuid = "f4aa2cfc-27e0-5369-bf89-6a183ca6c182",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 552,
+				name = "Reprisal",
+				timelineIndex = 98,
+				timerOffset = -2,
+				uuid = "8b154760-0b06-c83b-afc9-50536a26626e",
+				version = 2,
 			},
 		},
 	},
@@ -1391,6 +1822,27 @@ local tbl =
 			inheritedObjectUUID = "c4035793-3978-d72a-b7fe-8a02bb81b8da",
 			inheritedOverwrites = 
 			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "2f4004cf-61cf-ee2c-b511-789155c8796c",
+								version = 2,
+							},
+							inheritedObjectUUID = "21f94ae8-d3b8-642e-bbb7-2b2e3559020d",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							},
+						},
+					},
+				},
 				timerOffset = -3.5999999046326,
 			},
 		},
@@ -1442,6 +1894,7 @@ local tbl =
 										},
 									},
 								},
+								gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
 							},
 						},
 					},
@@ -1528,37 +1981,20 @@ local tbl =
 			},
 		},
 	},
-	[102] = 
-	{
-		
-		{
-			data = 
-			{
-				name = "disable",
-				uuid = "bd861484-25cf-7c5f-87fa-9101e183bf73",
-				version = 2,
-			},
-			inheritedObjectUUID = "70381933-2596-40a8-a2cd-27b223cb1a98",
-			inheritedOverwrites = 
-			{
-				enabled = false,
-			},
-		},
-	},
 	[109] = 
 	{
 		
 		{
 			data = 
 			{
-				name = "target boss",
-				uuid = "743f861d-8149-60b4-af64-ad333952cffc",
+				name = "No Mercy",
+				uuid = "af6a18e2-46f7-ca6c-9ee1-e9bac954439d",
 				version = 2,
 			},
-			inheritedObjectUUID = "172c13b1-72ce-b488-ac83-e68ecd90a8c8",
+			inheritedObjectUUID = "88a395b1-d227-a5f1-b244-fe31f5b84ccd",
 			inheritedOverwrites = 
 			{
-				enabled = false,
+				timerOffset = -0.30000001192093,
 			},
 		},
 	},
@@ -1602,10 +2038,97 @@ local tbl =
 		{
 			data = 
 			{
+				name = "Rampart",
+				uuid = "463c4ef5-4698-c826-a192-c0517a51a7ad",
+				version = 2,
+			},
+			inheritedObjectUUID = "d549ddd2-bdaf-7868-99fe-da6dcc6d4fcc",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "23ccd441-816c-a983-83ca-05981c9eea48",
+								version = 2,
+							},
+							inheritedObjectUUID = "441831d0-2336-6312-8d84-3720f756f330",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							},
+						},
+					},
+				},
+			},
+		},
+		
+		{
+			data = 
+			{
+				name = "Stance off",
+				uuid = "243a7f82-de0e-6a0b-84ac-9cbf09244348",
+				version = 2,
+			},
+			inheritedObjectUUID = "dda15b52-e183-2b45-b3df-d035296bb24d",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "fe9f18d9-bb01-43f0-8630-4469c1ebd719",
+								version = 2,
+							},
+							inheritedObjectUUID = "9d514081-4eca-c907-9924-cb1fb1107ccc",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_ReleaseGrit",
+							},
+						},
+					},
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "b1a7348d-e36f-a6da-8c23-617f64a11684",
+								version = 2,
+							},
+							inheritedObjectUUID = "e9d00519-1a2f-422f-a54a-bd6bb8d3bbd5",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
+							},
+						},
+					},
+				},
+			},
+		},
+		
+		{
+			data = 
+			{
 				name = "Nebula",
 				uuid = "12a1bee7-7552-6c55-8131-52a4109f9516",
 				version = 2,
 			},
+			inheritedIndex = 5,
 			inheritedObjectUUID = "5d29617f-cf80-812c-b7d0-4d5971faa246",
 			inheritedOverwrites = 
 			{
@@ -1664,7 +2187,7 @@ local tbl =
 						},
 					},
 				},
-				timerOffset = -10,
+				timerOffset = -8,
 			},
 		},
 		
@@ -1749,6 +2272,7 @@ local tbl =
 						},
 					},
 				},
+				timerOffset = -5,
 			},
 		},
 		
@@ -1838,6 +2362,7 @@ local tbl =
 										},
 									},
 								},
+								gVar = "ACR_RikuDRK2_Hotbar_Provoke",
 							},
 						},
 					},
@@ -2078,6 +2603,7 @@ local tbl =
 										},
 									},
 								},
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
 							},
 						},
 					},
@@ -2152,7 +2678,7 @@ local tbl =
 						},
 					},
 				},
-				enabled = false,
+				timerOffset = -5,
 			},
 		},
 		
@@ -2357,6 +2883,24 @@ local tbl =
 							},
 						},
 					},
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "4cde0c0d-4194-30fe-88d8-41cbf7e86cf5",
+								version = 2,
+							},
+							inheritedObjectUUID = "21f94ae8-d3b8-642e-bbb7-2b2e3559020d",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							},
+						},
+					},
 				},
 			},
 		},
@@ -2431,9 +2975,77 @@ local tbl =
 				},
 			},
 		},
+		
+		{
+			data = 
+			{
+				name = "Shirk to OT",
+				uuid = "e1dfc54c-149e-cc3a-9bd2-5093519f3ce1",
+				version = 2,
+			},
+			inheritedObjectUUID = "8a886a1e-4d17-587d-ba68-538e50552995",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "fa3803d2-94a4-445a-a114-aa8b089150d5",
+								version = 2,
+							},
+							inheritedObjectUUID = "fdf15d6f-ce3b-9d76-9582-6dae2747d8e0",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_ShirkOT",
+							},
+						},
+					},
+				},
+			},
+		},
 	},
 	[149] = 
 	{
+		
+		{
+			data = 
+			{
+				name = "Reprisal",
+				uuid = "9f267598-9f1f-1320-afbb-918f772b520b",
+				version = 2,
+			},
+			inheritedObjectUUID = "744f2cd6-8cd6-f28a-8fc3-49001257f2a5",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "99a2961b-7e6d-5855-87a5-413230331e4a",
+								version = 2,
+							},
+							inheritedObjectUUID = "a34b0504-7d17-fdf8-b9b3-e6c46402c8f7",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							},
+						},
+					},
+				},
+			},
+		},
 		
 		{
 			data = 
@@ -2522,6 +3134,78 @@ local tbl =
 				},
 			},
 		},
+		
+		{
+			data = 
+			{
+				name = "Mits",
+				uuid = "5af01488-acba-624a-a620-2a3e966e4e95",
+				version = 2,
+			},
+			inheritedIndex = 2,
+			inheritedObjectUUID = "6696e6d3-c9bc-44e5-a4f8-b6298cf63489",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "6902bb66-9b5b-8528-94e8-951f862f6f4a",
+								version = 2,
+							},
+							inheritedObjectUUID = "1f297ed9-0e86-c64e-89df-25550e6c39da",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							},
+						},
+					},
+				},
+			},
+		},
+	},
+	[176] = 
+	{
+		
+		{
+			data = 
+			{
+				name = "reprisal",
+				uuid = "30d0aeae-bf62-bf0a-ae34-0c01fca2516a",
+				version = 2,
+			},
+			inheritedObjectUUID = "483accb0-54bb-595f-afba-79d73a7d837f",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "b5be3020-6960-bb05-994f-02d45f01eb73",
+								version = 2,
+							},
+							inheritedObjectUUID = "80a92dcf-5ebc-3ae8-8a89-c189ed71d82f",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							},
+						},
+					},
+				},
+			},
+		},
 	},
 	[178] = 
 	{
@@ -2596,6 +3280,40 @@ local tbl =
 	},
 	[186] = 
 	{
+		
+		{
+			data = 
+			{
+				name = "Mits",
+				uuid = "6598ea74-2879-f7b4-a43e-4b3a5fc4e770",
+				version = 2,
+			},
+			inheritedObjectUUID = "dd426048-bc7c-8080-bc3d-b9378165b893",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "415a0a62-e5dd-009f-8319-499001a51e27",
+								version = 2,
+							},
+							inheritedObjectUUID = "4d0aa8e1-664d-4ee2-a4a7-7cb4d51cad81",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							},
+						},
+					},
+				},
+			},
+		},
 		
 		{
 			data = 
@@ -2703,6 +3421,40 @@ local tbl =
 					},
 				},
 				timerOffset = -5,
+			},
+		},
+		
+		{
+			data = 
+			{
+				name = "Rampart",
+				uuid = "d04a01e5-6bf3-ba4f-af23-899c8fef48a1",
+				version = 2,
+			},
+			inheritedObjectUUID = "476f0cfb-8d9e-0d52-b2a4-457f6b14ba4d",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "bd0da9eb-6fcf-9c70-82b5-6e205d7302e0",
+								version = 2,
+							},
+							inheritedObjectUUID = "fbd940e1-dd92-d431-813a-169bb903424d",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							},
+						},
+					},
+				},
 			},
 		},
 		
@@ -2818,34 +3570,89 @@ local tbl =
 		{
 			data = 
 			{
+				name = "provoke",
+				uuid = "dd470c6b-7ad7-a9ef-bb83-b52ca80e77c6",
+				version = 2,
+			},
+			inheritedObjectUUID = "e29c2f19-6a7f-7d03-a2c6-8561d302a922",
+			inheritedOverwrites = 
+			{
 				actions = 
 				{
 					
 					{
-						data = 
+						position = 1,
+						type = "add",
+						value = 
 						{
-							aType = "Variable",
-							gVar = "ACR_RikuDRK2_Hotbar_Provoke",
-							uuid = "4c077d9a-0c3d-a4b7-b5fb-2f66484a5fcd",
-							variableTogglesType = 2,
-							version = 2,
+							data = 
+							{
+								name = "",
+								uuid = "b6006a7f-9528-d2c5-a92e-48d02c2fb431",
+								version = 2,
+							},
+							inheritedIndex = 1,
+							inheritedObjectUUID = "cc7454e0-e1d7-b5ea-a608-b0f5142cc77c",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Hotbar_Provoke",
+							},
 						},
 					},
 				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1289.3,
-				name = "provoke",
-				timelineIndex = 197,
-				timerOffset = 1.5,
-				uuid = "f9ddbd40-421a-9e77-adec-ef78f354866c",
-				version = 2,
 			},
 		},
 	},
 	[198] = 
 	{
+		
+		{
+			data = 
+			{
+				name = "HOL",
+				uuid = "6965b7b2-f079-5815-9702-6a53501ba69f",
+				version = 2,
+			},
+			inheritedObjectUUID = "8b666d07-96a7-782d-8e0e-c7c415ae52af",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "remove",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "12c6779f-b65e-31f9-8328-ec52c2765acb",
+								version = 2,
+							},
+							inheritedObjectUUID = "f3b542c9-fd0c-889b-bc01-503fab3b12bc",
+						},
+					},
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "b538c2ef-b092-d028-9624-6d221dea1cd2",
+								version = 2,
+							},
+							inheritedObjectUUID = "7b455c25-1ab5-f417-ae8e-64111734954c",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
+							},
+						},
+					},
+				},
+			},
+		},
 		
 		{
 			data = 
@@ -2880,6 +3687,20 @@ local tbl =
 				},
 			},
 		},
+		
+		{
+			data = 
+			{
+				name = "use pot",
+				uuid = "0191cc4a-5ed8-6630-bd74-1b5028251882",
+				version = 2,
+			},
+			inheritedObjectUUID = "fc04909a-ddd7-129e-ba96-5fd55d61798c",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
+		},
 	},
 	[200] = 
 	{
@@ -2910,7 +3731,7 @@ local tbl =
 							inheritedObjectUUID = "df7358c6-05a8-970a-880a-de1644e69480",
 							inheritedOverwrites = 
 							{
-								gVar = "ACR_RikuWAR2_Hotbar_LimitBreak",
+								gVar = "ACR_RikuDRK2_Hotbar_LimitBreak",
 							},
 						},
 					},
@@ -2992,6 +3813,40 @@ local tbl =
 		{
 			data = 
 			{
+				name = "Rampart",
+				uuid = "556e6c85-118f-bbb8-9ef6-d76bcc1e5b64",
+				version = 2,
+			},
+			inheritedObjectUUID = "98568f67-a342-b918-ad3a-24f099eeafc2",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "95cae38c-0301-1a30-8568-38f7c677e26b",
+								version = 2,
+							},
+							inheritedObjectUUID = "fbd940e1-dd92-d431-813a-169bb903424d",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Rampart",
+							},
+						},
+					},
+				},
+			},
+		},
+		
+		{
+			data = 
+			{
 				name = "Nebula",
 				uuid = "6d4515ee-353b-cfe6-b7b6-c1c5e303ecb1",
 				version = 2,
@@ -3050,6 +3905,57 @@ local tbl =
 							inheritedOverwrites = 
 							{
 								gVar = "ACR_RikuDRK2_Tankbar_TheBlackestNightSelf",
+							},
+						},
+					},
+				},
+			},
+		},
+	},
+	[206] = 
+	{
+		
+		{
+			data = 
+			{
+				name = "HOL",
+				uuid = "38b83237-4619-85f7-ab47-a5ff5f31aad9",
+				version = 2,
+			},
+			inheritedObjectUUID = "d59b523a-21ed-24fd-87a3-8176618aeaea",
+			inheritedOverwrites = 
+			{
+				actions = 
+				{
+					
+					{
+						type = "remove",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "9826359e-1753-a484-ba56-ac5b0a29dbbe",
+								version = 2,
+							},
+							inheritedObjectUUID = "f3b542c9-fd0c-889b-bc01-503fab3b12bc",
+						},
+					},
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "05da48ba-89f9-1833-b058-6ab344666095",
+								version = 2,
+							},
+							inheritedObjectUUID = "7b455c25-1ab5-f417-ae8e-64111734954c",
+							inheritedOverwrites = 
+							{
+								gVar = "ACR_RikuDRK2_Tankbar_Reprisal",
 							},
 						},
 					},
